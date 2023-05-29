@@ -1,0 +1,11 @@
+.drawers {
+    position: absolute;
+    height: 340px;
+    width: 440px;
+    top: 50%;
+    left: 50%;
+    margin-top: -170px;
+    margin-left: -450px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}

@@ -1,122 +1,250 @@
-.card {
-    position: absolute;
-    height: 340px;
-    width: 540px;
-    top: 50%;
-    left: 50%;
-    margin-top: -170px;
-    margin-left: -90px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #ffffff;
-    box-shadow: 0px 10px 12px rgba(72, 85, 106, 0.1);
+@media all and (max-width: 999px) {
+    .card {
+        position: absolute;
+        height: 300px;
+        width: 330px;
+        top: 50%;
+        left: 50%;
+        margin-top: -63px;
+        margin-left: -165px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0px 10px 12px rgba(72, 85, 106, 0.1);
+    }
+    
+    h1 {
+        margin: 35px 30px 10px 30px;
+        color: hsl(217, 19%, 35%);
+        font-size: 17px;
+    }
+    
+    p {
+        margin: 0px 30px 20px 30px;
+        color: hsl(214, 17%, 51%);
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 20px;
+        word-spacing: 1.5px;
+    }
+    
+    .avatar {
+        height: 40px;
+        width: 40px;
+        margin: 15px 10px 0px 30px;
+        border-radius: 25px;
+    }
+    
+    h2 {
+        margin-top: -45px;
+        margin-left: 90px;
+        color: hsl(217, 19%, 35%);
+        font-size: 13px;
+    }
+    
+    h3 {
+        margin-top: -8px;
+        margin-left: 90px;
+        color: hsl(212, 23%, 69%);
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    .btnInactive {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        margin-top: -50px;
+        margin-left: 264px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: hsl(210, 46%, 95%);
+        cursor: pointer;
+    }
+    
+    .btnActive {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        margin-top: -50px;
+        margin-left: 264px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #6E8098;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .iconShare {
+        display: block;  
+    }
+    
+    .shareCard {
+        position: absolute;
+        height: 65px;
+        width: 330px;
+        top: 50%;
+        left: 50%;
+        margin-top: 85px;
+        margin-left: -165px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: hsl(217, 19%, 35%);
+    }
+    
+    h4 {
+        display: inline-block;
+        margin-top: 25px;
+        margin-left: 30px;
+        color: hsl(212, 23%, 69%);
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: 5px;
+        vertical-align: middle;
+    }
+    
+    .logo {
+        margin-top: 6px;
+        margin-left: 15px;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+    
+    .shareCardEnd {
+        display: none;
+    }
+    
+    .hidden {
+        display: none;
+    }
 }
 
-h1 {
-    margin: 40px 60px 20px 50px;
-    color: hsl(217, 19%, 35%);
-    font-size: 24px;
-}
-
-p {
-    margin: 0px 60px 20px 50px;
-    color: hsl(214, 17%, 51%);
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 25px;
-    word-spacing: 1.5px;
-}
-
-.avatar {
-    height: 50px;
-    width: 50px;
-    margin: 0px 10px 0px 50px;
-    border-radius: 25px;
-}
-
-h2 {
-    margin-top: -50px;
-    margin-left: 120px;
-    color: hsl(217, 19%, 35%);
-    font-size: 15px;
-}
-
-h3 {
-    margin-top: -10px;
-    margin-left: 120px;
-    color: hsl(212, 23%, 69%);
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.btnInactive {
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    margin-top: -55px;
-    margin-left: 455px;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: hsl(210, 46%, 95%);
-    cursor: pointer;
-}
-
-.btnActive {
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    margin-top: -55px;
-    margin-left: 455px;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: #6E8098;
-    cursor: pointer;
-}
-
-.iconShare {
-    display: block;  
-}
-
-.shareCard {
-    position: absolute;
-    height: 65px;
-    width: 280px;
-    margin-top: -155px;
-    margin-left: 333px;
-    border-radius: 10px;
-    background-color: hsl(217, 19%, 35%);
-}
-
-h4 {
-    display: inline-block;
-    margin-left: 50px;
-    color: hsl(212, 23%, 69%);
-    font-weight: 300;
-    letter-spacing: 5px;
-    vertical-align: middle;
-}
-
-.logo {
-    margin-left: 15px;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-}
-
-.shareCardEnd {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    margin-top: -10px;
-    margin-left: 130px;
-    rotate: 45deg;
-    background-color: hsl(217, 19%, 35%);
-}
-
-.hidden {
-    display: none;
+@media all and (min-width: 1000px) {
+    .card {
+        position: absolute;
+        height: 340px;
+        width: 540px;
+        top: 50%;
+        left: 50%;
+        margin-top: -170px;
+        margin-left: -90px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #ffffff;
+        box-shadow: 0px 10px 12px rgba(72, 85, 106, 0.1);
+    }
+    
+    h1 {
+        margin: 40px 60px 20px 50px;
+        color: hsl(217, 19%, 35%);
+        font-size: 24px;
+    }
+    
+    p {
+        margin: 0px 60px 20px 50px;
+        color: hsl(214, 17%, 51%);
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+        word-spacing: 1.5px;
+    }
+    
+    .avatar {
+        height: 50px;
+        width: 50px;
+        margin: 0px 10px 0px 50px;
+        border-radius: 25px;
+    }
+    
+    h2 {
+        margin-top: -50px;
+        margin-left: 120px;
+        color: hsl(217, 19%, 35%);
+        font-size: 15px;
+    }
+    
+    h3 {
+        margin-top: -10px;
+        margin-left: 120px;
+        color: hsl(212, 23%, 69%);
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .btnInactive {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        margin-top: -55px;
+        margin-left: 455px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: hsl(210, 46%, 95%);
+        cursor: pointer;
+    }
+    
+    .btnActive {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        margin-top: -55px;
+        margin-left: 455px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #6E8098;
+        cursor: pointer;
+    }
+    
+    .iconShare {
+        display: block;  
+    }
+    
+    .shareCard {
+        position: absolute;
+        height: 65px;
+        width: 280px;
+        margin-top: -155px;
+        margin-left: 333px;
+        border-radius: 10px;
+        background-color: hsl(217, 19%, 35%);
+    }
+    
+    h4 {
+        display: inline-block;
+        margin-left: 50px;
+        color: hsl(212, 23%, 69%);
+        font-weight: 300;
+        letter-spacing: 5px;
+        vertical-align: middle;
+    }
+    
+    .logo {
+        margin-left: 15px;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+    
+    .shareCardEnd {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        margin-top: -10px;
+        margin-left: 130px;
+        rotate: 45deg;
+        background-color: hsl(217, 19%, 35%);
+    }
+    
+    .hidden {
+        display: none;
+    }
 }

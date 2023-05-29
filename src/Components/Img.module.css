@@ -1,4 +1,19 @@
-.drawers {
+@media all and (max-width: 999px) { 
+    .drawers {
+    position: absolute;
+    height: 250px;
+    width: 330px;
+    top: 50%;
+    left: 50%;
+    margin-top: -270px;
+    margin-left: -165px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+}
+
+@media all and (min-width: 1000px) { 
+    .drawers {
     position: absolute;
     height: 340px;
     width: 440px;
@@ -8,4 +23,5 @@
     margin-left: -450px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    }
 }
